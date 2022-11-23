@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { agencyFees, CalculatorFields } from '../../core/models/calculator.model';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  agencyFees = [
-    { year: '1st year', fee: 0.3 },
-    { year: '2nd year', fee: 0.25 },
-    { year: 'following years', fee: 0.2 },
-  ];
+  agencyFees = agencyFees;
+  fields: CalculatorFields = {
+    annualRentalFee: 0,
+    propertyValue: 0,
+    rentAmount: 0,
+  };
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  onPriceChange(value: CalculatorFields) {
+    this.fields = value;
+    // TODO: Add calculation logic here, with the value got from the calculator component
+  }
 }
