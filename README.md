@@ -15,4 +15,10 @@ Automatic hosting service is running through the GitHub Pipeline, we are using G
 * Push to the `dev` for the normal development
 * Create PR and merge into `main` for the deployment
 
+## Project details
 
+### Major Dependencies
+
+* [Angular Material](https://material.angular.io) - For the UI components and default color schema and theme.
+* [Tailwind CSS](https://tailwindcss.com/) - For general utility classes for styling the pages and all details.
+* [Prettier](https://prettier.io/) - For styling the codebase under the best practice and common cookbooks. 
