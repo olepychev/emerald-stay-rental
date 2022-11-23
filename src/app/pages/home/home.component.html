@@ -1,0 +1,31 @@
+<section class="bg-emerald-100 min-h-100vh flex flex-col justify-between">
+  <div class="flex-grow flex flex-col-reverse mb-50">
+    <app-calculator (priceChanges)="onPriceChange($event)"></app-calculator>
+    <div class="bg-emerald-600 mx-auto max-w-350 px-20 py-30 text-white mb-50">
+      <div class="flex justify-center mb-30">
+        <mat-icon class="text-30 min-w-30 min-h-30">currency_exchange</mat-icon>
+      </div>
+      <div class="mb-10">
+        <span>Rental Income:</span> <span class="ml-10">{{ fields.annualRentalFee | percent }}</span>
+      </div>
+      <div class="mb-10">
+        <span>Property Costs:</span> <span class="ml-10">{{ fields.propertyValue | currency }}</span>
+      </div>
+      <div class="mb-10">
+        <span>Property Value:</span> <span class="ml-10">{{ fields.propertyValue | currency }}</span>
+      </div>
+      <hr class="border-emerald-600" />
+      <div class=""><span>Net Rental Yield:</span> <span class="ml-10">30</span></div>
+    </div>
+  </div>
+  <div class="flex justify-center flex-wrap gap-30 mb-30">
+    <div
+      class="flex flex-col justify-center items-center border border-emerald-600 rounded-2xl w-140 h-120 bg-emerald-600 text-white"
+      *ngFor="let item of agencyFees"
+    >
+      <mat-icon class="text-30 min-w-30 min-h-30 mb-10">real_estate_agent</mat-icon>
+      <span class="text-14">{{ item.year }}</span>
+      <span class="font-bold">{{ item.fee | percent }}</span>
+    </div>
+  </div>
+</section>
