@@ -11,12 +11,12 @@ export class CalculatorComponent implements OnInit {
   @Output() priceChanges: EventEmitter<CalculatorFields> = new EventEmitter<CalculatorFields>();
 
   form: FormGroup = this.fb.group({
-    propertyValue: [0],
-    rentAmount: [0],
-    annualRentalFee: [0],
+    propertyValue: [],
+    rentAmount: [],
+    annualRentalFee: [],
   });
 
-  constructor(private readonly fb: FormBuilder) {}
+  constructor(private readonly fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.form.valueChanges.subscribe((value) => {
