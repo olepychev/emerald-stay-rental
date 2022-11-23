@@ -1,5 +1,7 @@
 # Emerald Stay Rental Calculator
 
+https://starmori.github.io/emerald-stay-rental/
+
 This project is showing how to calculate the total income of the company - Emerald Stay Rental.
 
 ## Development
