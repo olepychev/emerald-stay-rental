@@ -7,7 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    children: [{ path: '', loadChildren: () => import('./pages/splash/splash.module').then((m) => m.SplashModule) }],
+    children: [
+      { path: '', loadChildren: () => import('./pages/splash/splash.module').then((m) => m.SplashModule) },
+      { path: 'app', loadChildren: () => import('./pages/home/home.module').then((m) => m.HomeModule) },
+    ],
   },
 ];
 
