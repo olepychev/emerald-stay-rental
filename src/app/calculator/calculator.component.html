@@ -1,19 +1,23 @@
-<form>
-  <mat-form-field appearance="outline">
-    <mat-label>Purchase price of the property</mat-label>
-    <input type="number" matInput />
-    <span matSuffix>$</span>
-  </mat-form-field>
+<form class="mx-15 text-14 mt-30">
+  <div class="w-full grid grid-cols-2 gap-15">
+    <mat-form-field appearance="outline" color="primary">
+      <mat-label>Purchase price of the property</mat-label>
+      <input type="number" matInput />
+      <span matSuffix>$</span>
+    </mat-form-field>
 
-  <mat-form-field appearance="outline">
-    <mat-label>Monthly rent amount</mat-label>
-    <input type="number" matInput />
-    <span matSuffix>$</span>
-  </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Monthly rent amount</mat-label>
+      <input type="number" matInput />
+      <span matSuffix>$</span>
+    </mat-form-field>
+  </div>
 
-  <mat-form-field appearance="outline">
-    <mat-label>Annual rental fee</mat-label>
-    <input type="number" matInput />
-    <span matSuffix>%</span>
-  </mat-form-field>
+  <div class="w-full grid grid-cols-2 gap-15">
+    <mat-form-field appearance="outline">
+      <mat-label>Annual rental fee</mat-label>
+      <input type="number" matInput />
+      <span matSuffix>%</span>
+    </mat-form-field>
+  </div>
 </form>
