@@ -26,7 +26,7 @@ module.exports = {
     // Override default configurations
     fontWeight: {
       normal: 400,
-      medium: 600,
+      medium: 500,
       bold: 700,
       black: 900,
     },
