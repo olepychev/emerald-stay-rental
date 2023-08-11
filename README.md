@@ -1,11 +1,3 @@
-# Emerald Stay Rental Calculator
-
-https://starmori.github.io/emerald-stay-rental/
-
-This project is showing how to calculate the total income of the company - Emerald Stay Rental.
-
-## Development
-
 ### Pipeline
 
 We have very basic pipeline configured for the development. The main branch for the development is `dev` and `main` branch is directly connected with the hosting server.
